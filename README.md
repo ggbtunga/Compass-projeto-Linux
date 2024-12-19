@@ -43,12 +43,11 @@ sudo apt update
 sudo apt install nginx
 ```  
     
-#### 3.4 Após a instalação, verifique o status do NGINX, basta abrir um navegador e ir em localhost ou digite este comando no terminal:
+#### 3.4 Após a instalação, verifique o status do NGINX digitando este comando no terminal:
 ```bash
 sudo systemctl status nginx
 ```  
 ![status_active](https://github.com/user-attachments/assets/1d02b512-0f96-4c4d-8b3d-68f4ef72978e)
-![browser_localhost](https://github.com/user-attachments/assets/51b410c3-25cd-407b-9de7-b5c88d73720f)
 
 #### 3.5 Se estiver parado,é necessário inicializá-lo:
 ```bash
@@ -61,7 +60,7 @@ sudo systemctl start nginx
 sudo ss -tunelp | grep nginx
 ```  
 ![porta](https://github.com/user-attachments/assets/fed9774d-7d1d-4253-89eb-b2b0547bc58b)    
-
+![browser_localhost](https://github.com/user-attachments/assets/51b410c3-25cd-407b-9de7-b5c88d73720f)
 ## 4. Configurações de permissões e logs
 #### 4.1 Altere a permissão de escrita do diretório /var/log/nginx:
 ```bash
