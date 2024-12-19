@@ -122,7 +122,9 @@ cat /var/log/nginx/status_online.log
 cat /var/log/nginx/status_offline.log
 ```
 Saída do log de status online:
+
 ![log_online](https://github.com/user-attachments/assets/3d2b1a31-5abf-42ce-87e4-beeab9972d84)
 
 Saída do log de status offline:
+
 ![log_offline](https://github.com/user-attachments/assets/0655adb5-76ba-456b-8338-2761b74dba2d)
