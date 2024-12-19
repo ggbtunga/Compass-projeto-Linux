@@ -12,10 +12,10 @@ Este projeto demonstra a configuração do WSL2 e do servidor NGINX, incluindo a
 
  1. [Instalação do WSL2](#1-instalação-do-wsl2)
  2. [Instalação da Distribuição Linux Ubuntu 20.04.6 LTS](#2-instalação-da-distribuição-linux-ubuntu-20046-lts)
- 3. [Instalação do NGINX](3-instalação-do-nginx)
- 4. [Configurações de permissões e logs](4-configurações-de-permissões-e-logs)
- 5. [Criação do script verificador](5-criação-do-script-verificador)
- 6. [Automatizando a execução do script](6-automatizando-a-execução-do-script)
+ 3. [Instalação do NGINX](#3-instalação-do-nginx)
+ 4. [Configurações de permissões e logs](#4-configurações-de-permissões-e-logs)
+ 5. [Criação do script verificador](#5-criação-do-script-verificador)
+ 6. [Automatizando a execução do script](#6-automatizando-a-execução-do-script)
 
 ## 1. Instalação do WSL2
 #### 1.1 Abra Prompt de Comando ou PowerShell com permissão de admnistrador e insira o comando:
