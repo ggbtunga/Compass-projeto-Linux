@@ -101,9 +101,11 @@ sudo chmod +x scripts/nginx_status_check.sh
 
 #### 5.5 Execute o script para verificar o status do NGINX.
 Script executado com o serviço online:
+
 ![script_online](https://github.com/user-attachments/assets/d5f36558-a848-4f28-8052-acb6fd6cb3ea)
 
 Script executado com o serviço offline:
+
 ![script_offline](https://github.com/user-attachments/assets/a73326b0-a20a-40c5-b37e-a307c7f9cbed)
 
 ## 6. Automatizando a execução do script
