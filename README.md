@@ -33,10 +33,15 @@ wsl -l -v
 ## 2. Instalação da Distribuição Linux Ubuntu 20.04.6 LTS
 #### 2.1 Abra a Microsoft Store e pesquise por Ubuntu 20.04.6 LTS
 #### 2.2 Procure por Ubuntu 20.04.6 LTS
+![microsoft_store](https://github.com/user-attachments/assets/3cb7d493-f82e-42bb-b389-92e491a04717)
+
 #### 2.3 Adquira e instale a distribuição.
+![ubuntu](https://github.com/user-attachments/assets/b094d439-336d-48ea-9260-bf45726a3b56)
 
 ## 3. Instalação do NGINX 
 #### 3.1 Abra o terminal do Ubuntu 20.04 e configure um usuário.
+![terminal_ubuntu](https://github.com/user-attachments/assets/13abcfd0-9b9f-4ee6-9263-95edcb0c9155)
+
 #### 3.2 Atualize a instância Ubuntu dentro do wsl2:
 ```bash
 sudo apt update
@@ -141,13 +146,27 @@ crontab -e
 #### 6.2 Dentro da crontab, insira esta linha de comando e salve o arquivo para ser executado a cada 5 minutos:
 ```bash
 */5 * * * * scripts/nginx_status_check.sh
-```  
+```
+
+Guia prático de como estruturar o crontab:
+```bash
+# ┌───────────── Minuto (0-59)
+# │ ┌───────────── Hora (0-23)
+# │ │ ┌───────────── Dia do Mês (1-31)
+# │ │ │ ┌───────────── Mês (1-12 ou nomes curtos)
+# │ │ │ │ ┌───────────── Dia da Semana (0-7 ou nomes curtos)
+# │ │ │ │ │
+# │ │ │ │ │
+# * * * * * /caminho/para/seu/script.sh
+```
+
 #### 6.3 Verifique a saída dos logs:
 
 ```bash
 cat /var/log/nginx/status_online.log
 cat /var/log/nginx/status_offline.log
 ```
+
 Saída do log de status online:
 
 ![log_online](https://github.com/user-attachments/assets/bbcbe85e-242c-4df8-831a-891bd76f45f6)
