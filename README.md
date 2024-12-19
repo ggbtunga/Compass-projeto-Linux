@@ -1,12 +1,16 @@
 # Atividade Prática 1 #PB - NOV 2024 | DevSecOps
 
-Este projeto demonstra a configuração do WSL2 e do servidor NGINX, incluindo automação e criação de scripts personalizados.
+Este projeto é uma introdução prática ao uso do WSL2 e ao gerenciamento do servidor NGINX. Abrange desde a instalação até a configuração de automações que monitoram o status do servidor.
 
 
-## Pré-requisitos
-- Sistemas Operacionais suportados : **Windows 10/11**
-- Windows Subsystem for Linux 2 (**WSL2**)
-- Distribuição Linux no WSL2 : **Ubuntu 20.04.6 LTS**
+### Pré-requisitos
+- **Sistemas Operacionais Suportados:**  
+  - Windows 10  
+  - Windows 11
+- **WSL2**
+- **Distribuição Linux:**  
+  - Ubuntu 20.04.6 LTS
+
 
 ## Índice
 
@@ -31,7 +35,7 @@ wsl -l -v
 #### 2.2 Procure por Ubuntu 20.04.6 LTS
 #### 2.3 Adquira e instale a distribuição.
 
-## 3.Instalação do NGINX 
+## 3. Instalação do NGINX 
 #### 3.1 Abra o terminal do Ubuntu 20.04 e configure um usuário.
 #### 3.2 Atualize a instância Ubuntu dentro do wsl2:
 ```bash
@@ -129,3 +133,10 @@ Saída do log de status online:
 Saída do log de status offline:
 
 ![log_offline](https://github.com/user-attachments/assets/0655adb5-76ba-456b-8338-2761b74dba2d)
+
+## Licença
+Este projeto está licenciado sob a [MIT License](LICENSE).
+
+## Créditos
+Projeto desenvolvido como parte da Atividade Prática 1 para #PB - NOV 2024 | DevSecOps.
+
