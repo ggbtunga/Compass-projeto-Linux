@@ -175,6 +175,9 @@ Saída do log de status offline:
 
 ![log_offline](https://github.com/user-attachments/assets/0655adb5-76ba-456b-8338-2761b74dba2d)
 
+## Conclusão
+Seguindo esta documentação, você será capaz de configurar e rodar um servidor NGINX utilizando o WSL2 no Windows, além de criar scripts personalizados para automatizar tarefas e gerenciar permissões e logs.
+
 ## Licença
 Este projeto está licenciado sob a [MIT License](LICENSE).
 
