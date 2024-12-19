@@ -22,14 +22,16 @@ Este projeto é uma introdução prática ao uso do WSL2 e ao gerenciamento do s
  6. [Automatizando a execução do script](#6-automatizando-a-execução-do-script)
 
 ## 1. Instalação do WSL2
-#### 1.1 Abra Prompt de Comando ou PowerShell com permissão de admnistrador e insira o comando:
+#### 1.1 Abra Prompt de Comando ou PowerShell com permissões de admnistrador e insira o comando:
 ```bash
 wsl --install
 ```   
 #### 1.2 Verifique se foi instalado corretamente como seguinte comando: 
 ```bash
 wsl -l -v
-```  
+```
+Reinicie a sua máquina após concluir a instalação do WSL2
+
 ## 2. Instalação da Distribuição Linux Ubuntu 20.04.6 LTS
 #### 2.1 Abra a Microsoft Store e pesquise por Ubuntu 20.04.6 LTS
 #### 2.2 Procure por Ubuntu 20.04.6 LTS
