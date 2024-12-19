@@ -96,7 +96,29 @@ sudo nano scripts/nginx_status_check.sh
 ```  
     
 #### 5.3 Utilize esse script para verificar o status do NGINX:
-![script](https://github.com/user-attachments/assets/e06867a5-4903-4083-8eff-e6b3f9f9cf66)
+```bash
+#!/bin/bash
+
+#Definindo variáveis de saída para arquivos de log no diretório /var/log/nginx/
+LOG_ONLINE="/var/log/nginx/status_online.log"
+LOG_OFFLINE="/var/log/nginx/status_offline.log"
+
+#Armazena a data e hora atual
+DATA=$(date "+%Y-%m-%d %H:%M:$S")
+
+#Variável do nome do serviço
+SERVICO="NGINX"
+
+#Verifica o status do serviço e armazena dentro do arquivo log
+if systemctl is-active --quiet nginx; then
+	echo "$DATA : [$SERVICO - Online] Serviço em execução." >> $LOG_ONLINE
+	echo "NGINX está online"
+else
+	echo "$DATA : [$SERVICO - Offline] Serviçao fora de execução" >> $LOG_OFFLINE
+	echo "NGINX está offline"
+fi
+```
+
 #### 5.4 Dê permissão de execução para o script:
 ```bash
 sudo chmod +x scripts/nginx_status_check.sh
@@ -128,7 +150,7 @@ cat /var/log/nginx/status_offline.log
 ```
 Saída do log de status online:
 
-![log_online](https://github.com/user-attachments/assets/3d2b1a31-5abf-42ce-87e4-beeab9972d84)
+![log_online](https://github.com/user-attachments/assets/bbcbe85e-242c-4df8-831a-891bd76f45f6)
 
 Saída do log de status offline:
 
